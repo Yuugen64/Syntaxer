@@ -28,7 +28,17 @@
 }
 
 .box-icon {
-    background-image: url("/src/app/assets/box-minimalistic-svgrepo-com.png");
+    background-image: url("../../../../assets/1024_box.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 5px; /*this controls the padding between the text and SVG*/
+    float: right; /*this float is required for the float left on the text to work*/
+    width: 35px;
+    height: 35px;
+}
+
+.pin-icon {
+    background-image: url("../../../../assets/1024_box.png");
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 5px; /*this controls the padding between the text and SVG*/
