@@ -47,6 +47,14 @@
     grid-column: col 3 / span 2;
     grid-row: row 1 / span 1;
 }
+.slot3 {
+    grid-column: col 1 / span 2;
+    grid-row: row 2 / span 1;
+}
+.slot4 {
+    grid-column: col 3 / span 2;
+    grid-row: row 2 / span 1;
+}
 
 .tinkerer-body {
     grid-column: col 1 / span 4;
@@ -71,8 +79,12 @@
 }
 
 .button-label {
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 2.5rem; /*This is where you change the LABEL TEXT SIZE*/
+    line-height: 1;
+    text-align: left;
+    float: left; /*this float is required for the float right on the chevron to work*/
+    padding: 5px 2px 2px 2px;
+    width: 60%;
 }
 
 
