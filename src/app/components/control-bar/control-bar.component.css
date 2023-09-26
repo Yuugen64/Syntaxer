@@ -11,8 +11,6 @@
     
     grid-template-columns: repeat(1, [col] 1fr);
     grid-template-rows: repeat(8, [row] 1fr);
-
-    background-color: #DDDDDD;
 }
 
 .slot1 {
