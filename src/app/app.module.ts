@@ -10,6 +10,7 @@ import { TinkererComponent } from './components/tinkerer/tinkerer.component';
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
 import { DynamicButtonComponent } from './components/sub-components/dynamic-button/dynamic-button.component';
 import { NavButtonComponent } from './components/sub-components/nav-button/nav-button.component';
+import { BodyCardComponent } from './components/sub-components/body-card/body-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavButtonComponent } from './components/sub-components/nav-button/nav-b
     TinkererComponent,
     ControlBarComponent,
     DynamicButtonComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    BodyCardComponent
   ],
   imports: [
     BrowserModule,
