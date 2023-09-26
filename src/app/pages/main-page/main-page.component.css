@@ -1,0 +1,194 @@
+/*===== RESET =====*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+
+    font-family: 'Cormorant Infant', serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1;
+    background-color: #CCC;
+    /*removes the default line-height styling that can interfere with precise absolute units.*/
+}
+
+p {
+    /*p-tag override for vertical line*/
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*===== ========== =====*/
+
+/*===== == Fonts == =====*/
+.title {
+    font-size: 5rem;
+    color: #97e6ab;
+    font-weight: 500;
+    text-align: right;
+}
+
+.sub-title {
+    font-size: 5rem;
+    color: #43ae5e;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*===== ========== =====*/
+
+/*===== Alignment =====*/
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*===== ========= =====*/
+
+
+
+/*===== == CSS Grid == =====*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .full-container{
+        background-color: #777;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .full-container{
+        background-color: #888;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .full-container{
+        background-color: #888;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container-main {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+
+        gap: 0px;       /* This is the current implementation of gutters for CSS Grid - ONLY AFFECTS SPACE BETWEEN */
+        padding: 0px 0px 0px 0px;       /*This is to match the "gap" size above*/
+        
+        grid-template-columns: repeat(15, [col] 1fr);
+        grid-template-rows: repeat(9, [row] 1fr);
+
+        background-color: #3bC6AF;
+    }
+
+    .title-area {
+        grid-column: col 1 / span 15;
+        grid-row: row 1 / span 1;
+
+        color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+
+        align-items: center;
+        justify-content: left;
+        display: flex;
+        background-image: linear-gradient( to right, blue, rgba(0, 175, 75, 0.25));
+        background-repeat: no-repeat;
+        background-color: green;
+    }
+
+    .left-controls-area {
+        grid-column: col 1 / span 1;
+        grid-row: row 2 / span 8;
+
+        color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        
+        align-items: center;
+        justify-content: center;
+        display: block;
+        background-color: yellow;
+        
+    }
+
+    .right-tinkerer-area {
+        grid-column: col 11 / span 5;
+        grid-row: row 2 / span 8;
+
+        color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        
+        align-items: center;
+        justify-content: center;
+        display: block; /*important for the child component to have access to full area*/
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {}*/
+
+/*===== ========== =====*/
+
+
+
+/*===== == Colors == =====*/
+#TeStInGcOlOrs {
+    
+    color: #00D0FF; /*Light Blue*/
+    color: #00BBE6; /*De-sat Blue*/
+    color: #009CBF; /*Mid-tone Blue*/
+    color: #006880; /*Darker Blue*/
+    color: #003440; /*Dark Blue*/
+    color: #95F9E8; /*Light Green Highlight*/
+    color: #4AF7DA; /*The BASE*/
+    color: #3bC6AF; /*Mid-tone*/
+    color: #24786A; /*De-sat*/
+    color: #0A7A68; /*Darker Green*/
+    color: #00AF7D; /*Grove green*/
+
+    color: #069e2d;
+    /*Pigment Green*/
+    color: #058e3f;
+    /*Forest Green*/
+    color: #04773b;
+    /*Dark Spring Green*/
+    color: #084c61;
+    /*Midnight Green*/
+    color: #03440c;
+    /*Pakistan Green*/
+
+    color: #2a2d34;
+    /*Gunmetal*/
+    color: #FFFFFF;
+    /*White*/
+    color: #DDDDDD;
+    /*Light Grey*/
+    color: #888888;
+    /*Middle Grey*/
+    color: #000000;
+    /*Pure Black*/
+}
+
+/*===== ===== =====*/

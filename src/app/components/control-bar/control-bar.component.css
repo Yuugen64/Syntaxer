@@ -1,0 +1,16 @@
+.controlbar-main {
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    gap: 0px;       /* This is the current implementation of gutters for CSS Grid - ONLY AFFECTS SPACE BETWEEN */
+    padding: 0px 0px 0px 0px;       /*This is to match the "gap" size above*/
+    
+    grid-template-columns: repeat(1, [col] 1fr);
+    grid-template-rows: repeat(8, [row] 1fr);
+
+    background-color: #DDDDDD;
+}
