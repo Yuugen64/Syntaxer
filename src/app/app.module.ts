@@ -9,6 +9,7 @@ import { TextOutputComponent } from './components/sub-components/text-output/tex
 import { TinkererComponent } from './components/tinkerer/tinkerer.component';
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
 import { DynamicButtonComponent } from './components/sub-components/dynamic-button/dynamic-button.component';
+import { NavButtonComponent } from './components/sub-components/nav-button/nav-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DynamicButtonComponent } from './components/sub-components/dynamic-butt
     TextOutputComponent,
     TinkererComponent,
     ControlBarComponent,
-    DynamicButtonComponent
+    DynamicButtonComponent,
+    NavButtonComponent
   ],
   imports: [
     BrowserModule,
