@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class TinkererComponent {
 
+
+
+
+public toggleTinkerer():void {
+  //console.log("[Tinkerer::Show/Hide Tab] - CLICKED");
+  /* 
+  The default position for the menu is animated "out". 
+  You then toggle the 'animateIn' to show or hide the menu.
+  */
+
+  const tinkererMenu = document.getElementById('tinkerer');
+  tinkererMenu?.classList.toggle('animateIn');
+}
 }

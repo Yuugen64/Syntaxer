@@ -11,6 +11,7 @@ import { ControlBarComponent } from './components/control-bar/control-bar.compon
 import { DynamicButtonComponent } from './components/sub-components/dynamic-button/dynamic-button.component';
 import { NavButtonComponent } from './components/sub-components/nav-button/nav-button.component';
 import { BodyCardComponent } from './components/sub-components/body-card/body-card.component';
+import { PromptAreaComponent } from './components/prompt-area/prompt-area.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BodyCardComponent } from './components/sub-components/body-card/body-ca
     ControlBarComponent,
     DynamicButtonComponent,
     NavButtonComponent,
-    BodyCardComponent
+    BodyCardComponent,
+    PromptAreaComponent
   ],
   imports: [
     BrowserModule,

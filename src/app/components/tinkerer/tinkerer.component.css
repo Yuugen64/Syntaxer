@@ -14,7 +14,7 @@
 
     background-color: #888888;
 
-    /*transform: translateX(100%);*/
+    transform: translateX(100%); /*To animate the tinkerer out of the way*/
 }
 
 /*The Sub-area for the controls grid layout*/
@@ -136,7 +136,7 @@
     grid-column: col 4 / span 1;
     grid-row: row 8 / span 1;
     background-color: #777777;
-    padding: 5px 20px 5px 20px; /*To constrain the button a bit while keeping it fully centered*/
+    padding: 15px 20px 5px 20px; /*To constrain the button a bit while keeping it fully centered*/
     border-radius: 25px 0px 0px 0px;
 }
 /*===== ========= =====*/
@@ -147,7 +147,7 @@
     transition-delay: 0s;
     transition-property: transform;
     transition-timing-function: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: .5s;
 }
 
 .close {
