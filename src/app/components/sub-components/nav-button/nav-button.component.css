@@ -55,6 +55,17 @@
     height: 50px;
 }
 
+/*A special button - adding the tokens to the prompt area*/
+.addIcon {
+    background-image: url("../../../../assets/add-category-svgrepo_1024x1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
+    width: 50px;
+    height: 50px;
+}
+
 /*===== ========== =====*/
 
 /*===== General Button Styling =====*/

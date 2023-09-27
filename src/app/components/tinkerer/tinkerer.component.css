@@ -17,6 +17,7 @@
     /*transform: translateX(100%);*/
 }
 
+/*The Sub-area for the controls grid layout*/
 .tinkerer-controls {
     grid-column: col 1 / span 4;
     grid-row: row 1 / span 3;
@@ -25,6 +26,7 @@
     padding: 10px;
 }
 
+/*Actual sub-grid for the buttons*/
 .controls-grid {
     display: grid;
     height: 100%;
@@ -39,6 +41,7 @@
     background-color: #999999;
 }
 
+/*For Controls Button positioning*/
 .slot1 {
     grid-column: col 1 / span 2;
     grid-row: row 1 / span 1;
@@ -56,6 +59,17 @@
     grid-row: row 2 / span 1;
 }
 
+/*For the control buttons Text labels*/
+.button-label {
+    font-size: 2.5rem; /*This is where you change the LABEL TEXT SIZE*/
+    line-height: 1;
+    text-align: left;
+    float: left; /*this float is required for the float right on the chevron to work*/
+    padding: 5px 2px 2px 2px;
+    width: 60%;
+}
+
+/*Area for the "Body Cards" that hold the prompt tokens.*/
 .tinkerer-body {
     grid-column: col 1 / span 4;
     grid-row: row 4 / span 5;
@@ -64,6 +78,7 @@
     padding: 10px;
 }
 
+/*Layout for the cards - with Scrollbars hidden*/
 .body-grid {
     display: grid;
     height: 100%;
@@ -87,15 +102,8 @@
     display: none; /* for Chrome, Safari, and Opera scrollbar obscure */
 }
 
-.button-label {
-    font-size: 2.5rem; /*This is where you change the LABEL TEXT SIZE*/
-    line-height: 1;
-    text-align: left;
-    float: left; /*this float is required for the float right on the chevron to work*/
-    padding: 5px 2px 2px 2px;
-    width: 60%;
-}
 
+/*To create the show/hide "tab" on the Tinkerer menu with icon and hover*/
 .showHideTabArea {
     grid-column: col 1 / span 1;
     grid-row: row 5 / span 1;
@@ -107,7 +115,6 @@
     background-color: #999999;
     transform: translateX(-100%);
 }
-
 .iconArea {
     background-image: url("../../../../src/assets/arrow-square-left-svgrepo_256x256.png");
     background-repeat: no-repeat;
@@ -121,9 +128,18 @@
 .showHideTabArea:hover {
     background-image: radial-gradient(100% 100% at 100% 0, #BBBBBB 0, #AAAAAA 100%);
 }
+/*===== ========= =====*/
 
 
-
+/*The button to add the tokens to the prompt area*/
+.addButtonArea {
+    grid-column: col 4 / span 1;
+    grid-row: row 8 / span 1;
+    background-color: #777777;
+    padding: 5px 20px 5px 20px; /*To constrain the button a bit while keeping it fully centered*/
+    border-radius: 25px 0px 0px 0px;
+}
+/*===== ========= =====*/
 
 /*===== Animation Stuff =====*/
 .tinkerer-main.animateIn {

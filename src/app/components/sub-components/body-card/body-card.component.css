@@ -50,14 +50,14 @@
 .closeIconArea {
     grid-column: col 10 / span 1;
     grid-row: row 1 / span 1;
-    background-color: lightcoral;
+    background-color: red;
 
     display: flex; /*So the smaller icons can position within the card cell instead of stretching to fill a hard block element*/
     height: 100%;
     width: 100%;
     padding: 3px 0px 3px 0px;
     border-radius: 10px 10px 10px 10px;
-    transform: translateY(10px);
+    /*transform: translateY(10px); this causes issues with stacking contexts since it now floats above other elements */
 
     justify-content: center;
 }
