@@ -145,6 +145,16 @@ p {
         display: block; /*important for the child component to have access to full area*/
     }
 
+    /*The "feature page" areas*/
+    .prompt-area {
+        grid-column: col 2 / span 14;
+        grid-row: row 2 / span 6;
+        
+        align-items: center;
+        justify-content: center;
+        display: block; /*important for the child component to have access to full area*/
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

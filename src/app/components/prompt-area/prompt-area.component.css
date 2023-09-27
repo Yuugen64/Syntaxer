@@ -1,0 +1,70 @@
+.main-container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    grid-template-columns: repeat(10, [col] 1fr);
+    grid-template-rows: repeat(8, [row] 1fr);
+
+    border-radius: 15px;
+
+    /*Confines the inner "card" by a small amount for styling - left is 0 due to dock padding visuals*/
+    padding: 10px 10px 10px 0px;
+}
+
+.output-card {
+    grid-column: col 1 / span 10;
+    grid-row: row 1 / span 8;
+
+    display: block;
+    padding: 10px; /*For the "card" visualization padding - the main-container and "main page" 'area' are chained.*/
+
+    border-radius: 15px;
+    background-color: #579460;
+    background-image: radial-gradient(100% 100% at 100% 0, #81c38b 0, #6baa73 20%, #5e9b67 50%, #579460 100%);
+
+    /*Drop Shadow for the prompt card*/
+    box-shadow: #033a05 0 2px 15px, #033a1e 0 2px 6px -3px, #033a1e 0 -3px 0 inset;  /*You can combine multiple box-shadows for the nice*/
+}
+
+.output-card-control-bar {
+    grid-column: col 1 / span 10;
+    grid-row: row 8 / span 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(20, [col] 1fr);
+    grid-template-rows: 1fr;
+
+    border-radius: 0px 0px 15px 15px;
+    background-color: #447f4d; /*#579460*/
+}
+.slot1{
+    grid-column: col 1 / span 1;
+    grid-row: row 1 / span 1;
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+}
+.slot2{
+    grid-column: col 2 / span 1;
+    grid-row: row 1 / span 1;
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+}
+.slot10{
+    grid-column: col 20 / span 1;
+    grid-row: row 1 / span 1;
+    
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 10px;
+}

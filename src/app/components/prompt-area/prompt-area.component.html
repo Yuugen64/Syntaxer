@@ -1,1 +1,25 @@
-<p>prompt-area works!</p>
+<div class="main-container">
+    <div class="output-card">
+        
+        <ul>
+            <li *ngFor="let token of tokens">{{token.text}}</li>
+        </ul>
+
+        
+    </div>
+
+    <!--Card Controls Bar (outside of card to hover over it)-->
+    <div class="output-card-control-bar">
+        <div class="slot1">
+            <app-nav-button [iconClass]="'sendIcon'"></app-nav-button>
+        </div>
+        <div class="slot2">
+            <app-nav-button [iconClass]="'weightIcon'"></app-nav-button>
+        </div>  
+        <div class="slot10">
+            <app-nav-button [iconClass]="'trashIcon'"></app-nav-button>
+        </div>      
+        
+            
+    </div>
+</div>

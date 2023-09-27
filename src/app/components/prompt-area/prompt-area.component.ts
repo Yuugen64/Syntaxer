@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class PromptAreaComponent {
 
+  tokens: {id: number, text: string}[] = [
+    { id: 0, text: "hello"},
+    { id: 1, text: "there"},
+  ];
 }

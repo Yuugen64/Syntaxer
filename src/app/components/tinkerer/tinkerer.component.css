@@ -114,6 +114,9 @@
     width: 30%;
     background-color: #999999;
     transform: translateX(-100%);
+
+    /*To give the tab a drop shadow for differentiation*/
+    box-shadow: #033a05 -3px 3px 8px;
 }
 .iconArea {
     background-image: url("../../../../src/assets/arrow-square-left-svgrepo_256x256.png");
