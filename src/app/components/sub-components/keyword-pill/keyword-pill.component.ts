@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output , EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-keyword-pill',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class KeywordPillComponent {
 
+  @Output() removeEvent = new EventEmitter<any>();  
+
+  removeKeyword(data: any) {
+
+    let emitData: any = {
+      id: 2,
+      text: 'yo'
+    };
+
+    console.log("[keyword-pill::removeKeyword emit] - ", emitData);
+
+    this.removeEvent.emit(emitData)
+  }
 }
