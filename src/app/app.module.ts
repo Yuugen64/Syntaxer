@@ -12,6 +12,7 @@ import { DynamicButtonComponent } from './components/sub-components/dynamic-butt
 import { NavButtonComponent } from './components/sub-components/nav-button/nav-button.component';
 import { BodyCardComponent } from './components/sub-components/body-card/body-card.component';
 import { PromptAreaComponent } from './components/prompt-area/prompt-area.component';
+import { KeywordPillComponent } from './components/sub-components/keyword-pill/keyword-pill.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PromptAreaComponent } from './components/prompt-area/prompt-area.compon
     DynamicButtonComponent,
     NavButtonComponent,
     BodyCardComponent,
-    PromptAreaComponent
+    PromptAreaComponent,
+    KeywordPillComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,106 @@
+/*===== Container and Sub-Layout =====*/
+.pill-body{
+    display: grid;
+    grid-template-columns: 1fr .15fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "label icon";
+
+    border-radius: 25px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1rem;
+
+    background-color: rgb(96, 156, 194);
+    border: solid 4px #6694b1;
+    max-width: fit-content; /*To constrain based on word length*/
+    height: 4rem; /*Based on general text size*/
+}
+/*Remember this doesn't affect <ng-content> passthrough*/
+.label-area {
+    grid-area: "label";
+    font-size: 2rem;
+    font-weight: 500;
+    color: #DDDDDD;
+    display: flex;
+
+    padding-top: 12px; /*To center the text output here*/
+    margin-left: 10px;
+    text-align: center;
+
+    cursor: default;
+    user-select: none;
+    pointer-events: none; /*disabling the click events*/
+}
+
+.icon-area {
+    grid-area: "icon";
+    padding: 4px 2px 0px 8px;
+    /*Margin here messes with vertical alignment of the entire button's contents.*/
+    
+}
+/*===== ========== =====*/
+
+
+/*===== Icon Classes (Different approach for this commponent since the icon is static) =====*/
+.coneIcon {
+    background-image: url("../../../../assets/traffic-cone-svgrepo_1024x1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*Position doesn't work here once manual size is given since the size leaves no resolution overhead for moving*/
+
+    border: solid 2px black;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+.removeIcon {
+    background-image: url("../../../../assets/close-svgrepo_1024x1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*Position doesn't work here once manual size is given since the size leaves no resolution overhead for moving*/
+
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    float: right;
+}
+.removeSVG {
+    background-color: rgb(87, 133, 160);
+    border-radius: 100%;
+}
+/*===== ========== =====*/
+
+.removeSVG:hover {
+    /*box-shadow: #033a1e 0 4px 8px .5px, #033a1e 0 7px 13px -3px, #033a1e 0 -3px 0 inset;*/
+    transform: translateY(0px);
+    background-image: radial-gradient(100% 100% at 100% 0, #bddcee 0, #6aa2c2 100%);
+    border-radius: 100%;
+    /*box-shadow: 0px 1px 2px #183a03;*/
+}
+.removeSVG:active {
+    box-shadow:  0 2px 5px #033a1e inset;  /*This is the click shadow inset*/
+    background-image: radial-gradient(100% 100% at 100% 0, #6aa2c2 0,  #bddcee 50%);
+    border-radius: 100%;
+    transform: translateY(1px);
+}
+
+
+.icon-area.disabled{
+    color: #CCCCCC;
+    background-image: radial-gradient(100% 100% at 100% 0, #AAAAAA 0, #AAAAAA 100%);
+    /*box-shadow: #033a1e 0 4px 8px .5px, #033a1e 0 7px 13px -3px, #033a1e 0 -3px 0 inset;*/
+    cursor: default;
+    user-select: none;
+    pointer-events: none; /*disabling the click events*/
+}
+.chevron-style.disabled{
+    margin-left: 15px;
+    fill: #CCC;
+}
+.icon-area.disabled:hover{
+    color: #CCCCCC;
+    background-image: radial-gradient(100% 100% at 100% 0, #AAAAAA 0, #AAAAAA 100%);
+    cursor: default;
+}
