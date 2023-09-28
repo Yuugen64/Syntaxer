@@ -1,12 +1,15 @@
 <div class="main-container">
     <div class="output-card">
         
+        <!--
         <ul>
             <li *ngFor="let token of tokens">{{token.text}}</li>
         </ul>
+        -->
+        
 
         <!--This is for testing-->
-        <app-keyword-pill>Keyword</app-keyword-pill>
+        <app-keyword-pill *ngFor="let token of tokens">{{token.text}}</app-keyword-pill>
         
     </div>
 
