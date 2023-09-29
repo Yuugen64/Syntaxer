@@ -10,9 +10,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
 }
 
 .terminalIcon {
@@ -20,9 +20,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
 }
 
 .scaleIcon {
@@ -30,9 +30,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
 }
 
 .notepadIcon {
@@ -40,9 +40,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 40px;
+    height: 40px;
 }
 
 .nodesIcon {
@@ -50,9 +50,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 40px;
+    height: 40px;
 }
 
 /*A special Tinkerer button - adding the tokens to the prompt area*/
@@ -61,9 +61,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
 }
 
 /*The Buttons for the Prompt Output area*/
@@ -72,27 +72,27 @@
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 25px;
+    height: 25px;
 }
 .sendIcon {
     background-image: url("../../../../assets/product-consumed-state-svgrepo_1024x1024.png");
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 5px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
 }
 .trashIcon {
     background-image: url("../../../../assets/trash-svgrepo_1024x1024png.png");
     background-repeat: no-repeat;
     background-size: contain;
     
-    margin-top: 5px; /*A way to slightly reduce the size of the icon given the auto sizing and CSS Grid parent container(s) constraints.*/
-    width: 50px;
-    height: 50px;
+    margin: 8px 0px 0px 0px;
+    width: 25px;
+    height: 25px;
 }
 
 /*===== ========== =====*/
@@ -100,7 +100,6 @@
 /*===== General Button Styling =====*/
 .nav{
     color: black;
-    background-color: #C3200F;
     background-image: radial-gradient(100% 100% at 100% 0, #6FA8C9 0, #6FA8C9 100%); /*The SECOND value is the actual fill color, the first is the highlight on hover*/
     box-shadow: #033a05 0 2px 4px, #033a1e 0 2px 6px -3px, #033a1e 0 -3px 0 inset;  /*You can combine multiple box-shadows for the nice*/
     
