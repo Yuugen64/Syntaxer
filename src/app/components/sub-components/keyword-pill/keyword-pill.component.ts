@@ -7,6 +7,7 @@ import { Component, Input, Output , EventEmitter, OnInit} from '@angular/core';
 })
 export class KeywordPillComponent implements OnInit {
 
+  //Input for index catch to allow for Output emitting to removal function!
   @Input() index: number;
   @Output() removeEvent = new EventEmitter<any>();
 

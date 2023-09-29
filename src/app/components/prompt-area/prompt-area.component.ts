@@ -12,10 +12,24 @@ export class PromptAreaComponent implements OnInit {
   constructor(){}
   
   public tokens: {id: number, text: string}[] = [
-    { id: 0, text: "hello"},
-    { id: 1, text: "there"},
-    { id: 2, text: "taco"},
-    { id: 3, text: "pizza"},
+    { id: 0, text: "a"},
+    { id: 1, text: "photo of"},
+    { id: 2, text: "a mountain"},
+    { id: 3, text: "at sunset"},
+    { id: 4, text: "behind grassy fields"},
+    { id: 5, text: "warm summer breeze"},
+    { id: 6, text: "adventure"},
+    { id: 7, text: "quest"},
+    { id: 8, text: "realistic lighting"},
+    { id: 0, text: "a"},
+    { id: 1, text: "photo of"},
+    { id: 2, text: "a mountain"},
+    { id: 3, text: "at sunset"},
+    { id: 4, text: "behind grassy fields"},
+    { id: 5, text: "warm summer breeze"},
+    { id: 6, text: "adventure"},
+    { id: 7, text: "quest"},
+    { id: 8, text: "realistic lighting"}
   ];
 
   removeKeyword(event: any) {

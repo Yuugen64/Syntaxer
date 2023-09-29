@@ -6,17 +6,21 @@
     grid-template-columns: repeat(10, [col] 1fr);
     grid-template-rows: repeat(8, [row] 1fr);
 
-    border-radius: 15px;
+    border-radius: 0px;
 
     /*Confines the inner "card" by a small amount for styling - left is 0 due to dock padding visuals*/
     padding: 10px 10px 10px 0px;
 }
 
 .output-card {
-    grid-column: col 1 / span 10;
+    grid-column: col 1 / span 10; /*Determines the width of the card*/
     grid-row: row 1 / span 8;
 
-    display: block;
+    
+    /*grid-template-columns: repeat(auto-fit, minmax(min-content, 150px)); /*This sort of works but causes blowout*/
+    /*grid-template-columns: minmax(min-content, max-content);*/
+    /*grid-auto-rows: 50px; /*Controls the row height to allow*/
+
     padding: 10px; /*For the "card" visualization padding - the main-container and "main page" 'area' are chained.*/
 
     border-radius: 15px;
@@ -25,6 +29,18 @@
 
     /*Drop Shadow for the prompt card*/
     box-shadow: #033a05 0 2px 15px, #033a1e 0 2px 6px -3px, #033a1e 0 -3px 0 inset;  /*You can combine multiple box-shadows for the nice*/
+}
+
+.prompt-sub-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+    background-color: rgba(149, 215, 160, 0.2);
 }
 
 .output-card-control-bar {

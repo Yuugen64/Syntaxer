@@ -10,13 +10,15 @@
     padding: 0px;
     margin: 10px;
     line-height: 1rem;
+    text-wrap: nowrap; /*prevents breakout in Y-direction*/
+    overflow: hidden; /*to hide the overflow within the pill, but there shouldn't be overflow*/
 
-    background-color: rgb(96, 156, 194);
-    border: solid 4px #6694b1;
-    max-width: fit-content; /*To constrain based on word length*/
+    width: fit-content; /*To constrain based on word length*/
     height: 4rem; /*Based on general text size*/
 
     box-shadow: -2px 2px 5px #696969;
+    background-color: rgb(96, 156, 194);
+    border: solid 4px #6694b1;
 }
 /*Remember this doesn't affect <ng-content> passthrough*/
 .label-area {
