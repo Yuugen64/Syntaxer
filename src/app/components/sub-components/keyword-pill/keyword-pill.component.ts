@@ -1,23 +1,30 @@
-import { Component, Output , EventEmitter} from '@angular/core';
+import { Component, Input, Output , EventEmitter, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-keyword-pill',
   templateUrl: './keyword-pill.component.html',
   styleUrls: ['./keyword-pill.component.css']
 })
-export class KeywordPillComponent {
+export class KeywordPillComponent implements OnInit {
 
-  @Output() removeEvent = new EventEmitter<any>();  
+  @Input() index: number;
+  @Output() removeEvent = new EventEmitter<any>();
 
+  constructor(){}
+
+  ngOnInit(): void {
+    //console.log("[onInit:: Index Binding] - "+this.index);
+  }
+
+ 
   removeKeyword(data: any) {
 
     let emitData: any = {
-      id: 2,
-      text: 'yo'
+      id: this.index
     };
 
-    console.log("[keyword-pill::removeKeyword emit] - ", emitData);
-
+    console.log("[keyword-pill::removeKeyword $event] - ", data);
+    console.log("[keyword-pill::removeKeyword this.index] - ", this.index);
     this.removeEvent.emit(emitData)
   }
 }

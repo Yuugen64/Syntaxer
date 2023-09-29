@@ -9,7 +9,7 @@
         
 
         <!--This is for testing-->
-        <app-keyword-pill *ngFor="let token of tokens">{{token.text}}</app-keyword-pill>
+        <app-keyword-pill *ngFor="let token of tokens; index as i" (removeEvent)="removeKeyword($event)" [index]="i">{{token.text}}</app-keyword-pill>
         
     </div>
 
