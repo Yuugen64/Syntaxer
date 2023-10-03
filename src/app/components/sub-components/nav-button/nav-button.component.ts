@@ -9,6 +9,7 @@ export class NavButtonComponent implements OnInit {
 
   //For dynamically swapping out the icons on the buttons using a dedicated CSS class in the icon area
   @Input() iconClass: string = "coneIcon";
+  @Input() buttonFill: string = "lightGrey";
   
   constructor(){}
 

@@ -1,3 +1,10 @@
+:host {
+    --nav-bg-lightblue: radial-gradient(100% 100% at 100% 0, #6FA8C9 0, #6FA8C9 100%); /*The SECOND value is the actual fill color, the first is the highlight on hover*/
+    --nav-bg-lightgreen: radial-gradient(100% 100% at 100% 0, #6fc99d 0, #6fc9a5 100%);
+    --nav-bg-lightred: radial-gradient(100% 100% at 100% 0, #c96f6f 0, #c96f6f 100%);
+    --nav-bg-lightgrey: radial-gradient(100% 100% at 100% 0, #d2d2d2 0, #b3b3b3 100%);
+}
+
 .icon-area{
     width: 100%;
     height: 100%;
@@ -100,7 +107,8 @@
 /*===== General Button Styling =====*/
 .nav{
     color: black;
-    background-image: radial-gradient(100% 100% at 100% 0, #6FA8C9 0, #6FA8C9 100%); /*The SECOND value is the actual fill color, the first is the highlight on hover*/
+    /*background-image: radial-gradient(100% 100% at 100% 0, #6FA8C9 0, #6FA8C9 100%); /*The SECOND value is the actual fill color, the first is the highlight on hover*/
+    
     box-shadow: #033a05 0 2px 4px, #033a1e 0 2px 6px -3px, #033a1e 0 -3px 0 inset;  /*You can combine multiple box-shadows for the nice*/
     
     font-weight: 500;
@@ -126,6 +134,19 @@
     justify-content: center;
     align-content: center;
 }
+.lightGrey {
+    background-image: var(--nav-bg-lightgrey);
+}
+.lightBlue {
+    background-image: var(--nav-bg-lightblue);
+}
+.lightGreen {
+    background-image: var(--nav-bg-lightgreen);
+}
+.lightRed {
+    background-image: var(--nav-bg-lightred);
+}
+
 .nav:hover {
     /*box-shadow: #033a1e 0 4px 8px .5px, #033a1e 0 7px 13px -3px, #033a1e 0 -3px 0 inset;*/
     transform: translateY(0px);
