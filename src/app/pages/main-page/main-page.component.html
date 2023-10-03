@@ -19,5 +19,10 @@
         <app-prompt-area></app-prompt-area>
     </div>
 
+    <!--Shroud Area:: Goes Last to automatically render ABOVE other components
+    (except tinkerer due to anim and title due to z-index)-->
+    <div class="shroud-area">
+        <app-shroud-component (toggleEvent)="passToTinkerer()"></app-shroud-component>
+    </div>
 
 </div>

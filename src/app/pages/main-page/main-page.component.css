@@ -104,6 +104,8 @@ p {
         border-radius: 0px 0px 0px 0px;
         padding: 0px 0px 0px 20px;
 
+        z-index: 500; /*To put the title bar above the "shroud" and tinkerer slid-out menu*/
+
         align-items: center;
         justify-content: left; /*position text within title area*/
         display: flex;
@@ -143,6 +145,11 @@ p {
         align-items: center;
         justify-content: center;
         display: block; /*important for the child component to have access to full area*/
+    }
+
+    .shroud-area {
+        grid-column: col 1 / span 15;
+        grid-row: row 1 / span 9;
     }
 
     /*The "feature page" areas*/

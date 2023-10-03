@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+  @Output() mainToTinkerer = new EventEmitter<any>();
+
+  passToTinkerer() {
+    console.log("[Main Page] - Data received from shroud!");
+    this.mainToTinkerer.emit("[Main Page]-Shroud clicked pls close tinkerer");
+  }
 }
