@@ -14,7 +14,12 @@
 
     background-color: #888888;
 
-    transform: translateX(100%); /*To animate the tinkerer out of the way*/
+    /*We simply have the reverse of this as the "animateIn" class to cause the normal behavior to be nice*/
+    transform: translateX(100%);
+    transition-delay: 0s;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
 }
 
 /*The Sub-area for the controls grid layout*/
@@ -128,9 +133,15 @@
     width: 100%;
     height: 100%;
 }
+.iconArea.flipped {
+    background-image: url("../../../../src/assets/arrow-square-right-svgrepo_256x256.png");
+}
+
+
 .showHideTabArea:hover {
     background-image: radial-gradient(100% 100% at 100% 0, #BBBBBB 0, #AAAAAA 100%);
 }
+
 /*===== ========= =====*/
 
 
@@ -170,6 +181,16 @@
 
     100% {
         background: rgba(0, 38, 51, 0.7);
+    }
+}
+
+@keyframes flipIcon {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(180);
     }
 }
 /*===== ========== =====*/

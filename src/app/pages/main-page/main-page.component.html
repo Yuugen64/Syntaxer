@@ -22,7 +22,9 @@
     </div>
 
     <!--Shroud Area:: Goes Last to automatically render ABOVE other components
-        (except tinkerer due to anim and title due to z-index)-->
+        (except tinkerer due to anim and title due to z-index). We also hide the
+        CSS-grid itself since it would block all of the content it is rendered over
+        due to the cascading rendering.-->
     <div id="tinkererShroudArea" class="shroud-area hide">
         <!--The parent emit() is event bound to a custom emitted toggleEvent in the child, and iterates once-->
         <app-shroud-component (toggleEvent)="emitEventToChild()"></app-shroud-component>
