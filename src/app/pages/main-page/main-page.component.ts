@@ -14,13 +14,12 @@ export class MainPageComponent {
   //the function we bind to our CHILD event @Output eventEmitter function() ".emit"
   emitEventToChild() {
     const shroudArea = document.getElementById('tinkererShroudArea');
-    shroudArea?.classList.toggle('hide');
+    shroudArea?.classList.toggle('hide'); //handles the hiding of the shroud-area**
     this.eventsSubject.next(); //iterates the Subject
   }
 
   showShroud() {
     const shroudArea = document.getElementById('tinkererShroudArea');
-    shroudArea?.classList.toggle('hide');
-    console.log('(emitEventToChild) - should hide')
+    shroudArea?.classList.toggle('hide'); //companion show shroud functionality
   }
 }

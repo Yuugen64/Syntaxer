@@ -10,8 +10,6 @@ export class ShroudComponentComponent {
 @Output() toggleEvent = new EventEmitter<any>();
 
 sendToggleEvent() {
-  const shroudArea = document.getElementById('shroudArea');
-  //shroudArea?.classList.toggle('hide');
   this.toggleEvent.emit();
 }
 }

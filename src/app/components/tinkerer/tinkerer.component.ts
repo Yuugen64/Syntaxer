@@ -12,7 +12,7 @@ export class TinkererComponent implements OnInit, OnDestroy {
 
   private eventsSubscription: Subscription;
   @Input() events = new Observable<void>;
-  @Output() showShroud = new EventEmitter<string>();
+  @Output() showShroud = new EventEmitter<void>();
 
   constructor(){}
 
@@ -25,13 +25,15 @@ export class TinkererComponent implements OnInit, OnDestroy {
   }
 
 public toggleShroud():void {
-  this.showShroud.emit("Show shroud!");
+  this.showShroud.emit();
 }
 
 public toggleTinkerer():void {
-  /* The default position for the menu is animated "out". You then toggle the 'animateIn' to show or hide the menu.*/
+  /* The default position for the menu is animated* "out". 
+  You then toggle the 'animateIn' to show or hide the menu.*/
   const tinkererMenu = document.getElementById('tinkerer');
   const tabIcon = document.getElementById('tabIcon');
+
   tinkererMenu?.classList.toggle('animateIn');
   tabIcon?.classList.toggle('flipped');
 }

@@ -3,8 +3,17 @@
     height: 100%;
     width: 100%;
 
+    animation: fadeIn .5s 0s 1 forwards ease-in-out;
+
     background-color: rgba(0,0,0,0.4);
 }
-.hide {
-    display: none;
+
+@keyframes fadeIn {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+
+    100% {
+        background-color: rgba(0,0,0,0.4);
+    }
 }
