@@ -147,13 +147,7 @@ p {
         display: block; /*important for the child component to have access to full area*/
     }
 
-    .shroud-area {
-        grid-column: col 1 / span 15;
-        grid-row: row 2 / span 8;
-    }
-    .hide {
-        display: none;
-    }
+
 
     /*The "feature page" areas*/
     .prompt-area {
@@ -164,7 +158,70 @@ p {
         justify-content: center;
         display: block; /*important for the child component to have access to full area*/
     }
+    .negative-area {
+        grid-column: col 2 / span 14;
+        grid-row: row 2 / span 6;
 
+        background-color: lightcoral;
+        
+        align-items: center;
+        justify-content: center;
+        display: block; /*important for the child component to have access to full area*/
+    }
+    .notebook-area {
+        grid-column: col 2 / span 14;
+        grid-row: row 2 / span 6;
+
+        background-color: lightcyan;
+        
+        align-items: center;
+        justify-content: center;
+        display: none; /*important for the child component to have access to full area*/
+    }
+    .weights-area {
+        grid-column: col 2 / span 14;
+        grid-row: row 2 / span 6;
+
+        background-color: lightgoldenrodyellow;
+        
+        align-items: center;
+        justify-content: center;
+        display: none; /*important for the child component to have access to full area*/
+    }
+    .combo-area {
+        grid-column: col 2 / span 14;
+        grid-row: row 2 / span 6;
+
+        background-color: green;
+        
+        align-items: center;
+        justify-content: center;
+        display: none; /*important for the child component to have access to full area*/
+    }
+
+    /*
+    .prompt-area, .negative-area, .notebook-area, .weights-area, .combo-area {
+        @keyframes fadeIn {
+            0% {
+                background-color: rgba(0,0,0,0);
+            }
+        
+            100% {
+                background-color: rgba(0,0,0,0.4);
+            }
+        }
+    }
+    */
+
+
+/*===== Tinkerer Shroud Stuff =====*/
+    .shroud-area {
+        grid-column: col 1 / span 15;
+        grid-row: row 2 / span 8;
+    }
+    .hide {
+        display: none;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

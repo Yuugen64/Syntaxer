@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -6,7 +6,18 @@ import { Subject } from 'rxjs';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnInit {
+
+
+
+  constructor() {}
+
+  ngOnInit(): void {}
+
+
+
+
+  //THIS IS ALL OF THE TINKERER SLIDE-OUT STUFF BELOW
 
   //creates a new RxJS subject for us to iterate in the thread
   eventsSubject: Subject<void> = new Subject<void>();
