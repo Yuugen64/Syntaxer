@@ -11,7 +11,9 @@
     </div>
 
     <div class="right-tinkerer-area">
-        <app-tinkerer></app-tinkerer>
+        <!--The parent* eventsSubject.asObservable is iterated once below in the event binding, 
+            tinkerer then subscribes onInit and calls a Fn() when its local variable holding this data gets iterated-->
+        <app-tinkerer (showShroud)="showShroud()" [events]="eventsSubject.asObservable()"></app-tinkerer>
     </div>
 
     <!--The "feature pages"-->
@@ -20,9 +22,10 @@
     </div>
 
     <!--Shroud Area:: Goes Last to automatically render ABOVE other components
-    (except tinkerer due to anim and title due to z-index)-->
-    <div class="shroud-area">
-        <app-shroud-component (toggleEvent)="passToTinkerer()"></app-shroud-component>
+        (except tinkerer due to anim and title due to z-index)-->
+    <div id="tinkererShroudArea" class="shroud-area hide">
+        <!--The parent emit() is event bound to a custom emitted toggleEvent in the child, and iterates once-->
+        <app-shroud-component (toggleEvent)="emitEventToChild()"></app-shroud-component>
     </div>
 
 </div>

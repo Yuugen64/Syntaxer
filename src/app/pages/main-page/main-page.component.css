@@ -151,6 +151,9 @@ p {
         grid-column: col 1 / span 15;
         grid-row: row 1 / span 9;
     }
+    .hide {
+        display: none;
+    }
 
     /*The "feature page" areas*/
     .prompt-area {

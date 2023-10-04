@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-main-page',
@@ -7,10 +8,19 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class MainPageComponent {
 
-  @Output() mainToTinkerer = new EventEmitter<any>();
+  //creates a new RxJS subject for us to iterate in the thread
+  eventsSubject: Subject<void> = new Subject<void>();
 
-  passToTinkerer() {
-    console.log("[Main Page] - Data received from shroud!");
-    this.mainToTinkerer.emit("[Main Page]-Shroud clicked pls close tinkerer");
+  //the function we bind to our CHILD event @Output eventEmitter function() ".emit"
+  emitEventToChild() {
+    const shroudArea = document.getElementById('tinkererShroudArea');
+    shroudArea?.classList.toggle('hide');
+    this.eventsSubject.next(); //iterates the Subject
+  }
+
+  showShroud() {
+    const shroudArea = document.getElementById('tinkererShroudArea');
+    shroudArea?.classList.toggle('hide');
+    console.log('(emitEventToChild) - should hide')
   }
 }
