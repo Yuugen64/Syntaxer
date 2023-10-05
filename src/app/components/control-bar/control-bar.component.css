@@ -33,3 +33,10 @@
     grid-row: row 4 / span 1;
     margin: 10px; /*For constraing the button within the navbar "cells"*/
 }
+
+
+.slot8 {
+    grid-column: col 1 / span 1;
+    grid-row: row 8 / span 1;
+    margin: 10px; /*For constraing the button within the navbar "cells"*/
+}

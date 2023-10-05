@@ -2,7 +2,7 @@
     --nav-bg-lightblue: radial-gradient(100% 100% at 100% 0, #6FA8C9 0, #6FA8C9 100%); /*The SECOND value is the actual fill color, the first is the highlight on hover*/
     --nav-bg-lightgreen: radial-gradient(100% 100% at 100% 0, #6fc99d 0, #6fc9a5 100%);
     --nav-bg-lightred: radial-gradient(100% 100% at 100% 0, #c96f6f 0, #c96f6f 100%);
-    --nav-bg-lightgrey: radial-gradient(100% 100% at 100% 0, #d2d2d2 0, #b3b3b3 100%);
+    --nav-bg-lightgrey: radial-gradient(100% 100% at 100% 0, #b4b3b3 0, #939393 100%);
 }
 
 .icon-area{
@@ -101,6 +101,25 @@
     width: 25px;
     height: 25px;
 }
+.bulbIcon {
+    background-image: url("../../../../assets/think-svgrepo_1024x1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin: 8px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.canisterIcon {
+    background-image: url("../../../../assets/isolate-svgrepo_1024x1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin: 8px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+
 
 /*===== ========== =====*/
 
@@ -150,7 +169,7 @@
 .nav:hover {
     /*box-shadow: #033a1e 0 4px 8px .5px, #033a1e 0 7px 13px -3px, #033a1e 0 -3px 0 inset;*/
     transform: translateY(0px);
-    background-image: radial-gradient(100% 100% at 100% 0, #dde1e3 0, #c5cdd2 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #cfcfcf 0, #c1c1c1 100%);
     /*box-shadow: 0px 1px 2px #183a03;*/
 }
 .nav:active {
